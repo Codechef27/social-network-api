@@ -42,11 +42,8 @@ const userSchema = new Schema(
 );
 
 
-userSchema.virtual('thoughtCount').get(function() {
-  return this.thoughts.reduce(
-    (total, thoughts) => total + thoughts.length + 1,
-    0
-  );
+userSchema.virtual('friendCount').get(function() {
+  return this.friends.length;
 });
 
 const User = model('User', userSchema);
