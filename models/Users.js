@@ -1,4 +1,6 @@
 const { Schema, model } = require('mongoose');
+const timestamp = require('time-stamp')
+
 
 
 const userSchema = new Schema(
@@ -16,7 +18,7 @@ const userSchema = new Schema(
     },
     createdAt: {
       type: Date,
-      default: Date.now,
+      get:() => (timestamp('YYYY/MM/DD HH:MM')) 
     },
     thoughts: [
       {
@@ -34,7 +36,7 @@ const userSchema = new Schema(
   {
     toJSON: {
       virtuals: true,
-      // getters: true
+      getters: true
     },
     // prevents virtuals from creating duplicate of _id as `id`
     id: false
