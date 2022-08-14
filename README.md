@@ -2,7 +2,9 @@
 
   # Social-Network-Api
 
-  -[Link to demo video](https://drive.google.com/file/d/1PB22vEJMksnU420alk_2tYDZ8SNckuEQ/view)
+  -[Link to demo video-->](https://drive.google.com/file/d/1PB22vEJMksnU420alk_2tYDZ8SNckuEQ/view)
+  
+  -[link to repo-->](https://github.com/Codechef27/social-network-api)
 
   ## Table of Contents
 
